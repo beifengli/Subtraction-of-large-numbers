@@ -1,0 +1,11 @@
+F:\Documents\myproject\string0813\string0813\bin\Debug\netcoreapp2.1\string0813.deps.json
+F:\Documents\myproject\string0813\string0813\bin\Debug\netcoreapp2.1\string0813.runtimeconfig.json
+F:\Documents\myproject\string0813\string0813\bin\Debug\netcoreapp2.1\string0813.runtimeconfig.dev.json
+F:\Documents\myproject\string0813\string0813\bin\Debug\netcoreapp2.1\string0813.dll
+F:\Documents\myproject\string0813\string0813\bin\Debug\netcoreapp2.1\string0813.pdb
+F:\Documents\myproject\string0813\string0813\obj\Debug\netcoreapp2.1\string0813.csprojAssemblyReference.cache
+F:\Documents\myproject\string0813\string0813\obj\Debug\netcoreapp2.1\string0813.csproj.CoreCompileInputs.cache
+F:\Documents\myproject\string0813\string0813\obj\Debug\netcoreapp2.1\string0813.AssemblyInfoInputs.cache
+F:\Documents\myproject\string0813\string0813\obj\Debug\netcoreapp2.1\string0813.AssemblyInfo.cs
+F:\Documents\myproject\string0813\string0813\obj\Debug\netcoreapp2.1\string0813.dll
+F:\Documents\myproject\string0813\string0813\obj\Debug\netcoreapp2.1\string0813.pdb

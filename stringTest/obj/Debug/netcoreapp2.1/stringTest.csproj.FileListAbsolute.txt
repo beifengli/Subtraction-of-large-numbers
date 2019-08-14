@@ -1,0 +1,17 @@
+F:\Documents\myproject\string0813\stringTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+F:\Documents\myproject\string0813\stringTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+F:\Documents\myproject\string0813\stringTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+F:\Documents\myproject\string0813\stringTest\bin\Debug\netcoreapp2.1\stringTest.deps.json
+F:\Documents\myproject\string0813\stringTest\bin\Debug\netcoreapp2.1\stringTest.runtimeconfig.json
+F:\Documents\myproject\string0813\stringTest\bin\Debug\netcoreapp2.1\stringTest.runtimeconfig.dev.json
+F:\Documents\myproject\string0813\stringTest\bin\Debug\netcoreapp2.1\stringTest.dll
+F:\Documents\myproject\string0813\stringTest\bin\Debug\netcoreapp2.1\stringTest.pdb
+F:\Documents\myproject\string0813\stringTest\bin\Debug\netcoreapp2.1\string0813.dll
+F:\Documents\myproject\string0813\stringTest\bin\Debug\netcoreapp2.1\string0813.pdb
+F:\Documents\myproject\string0813\stringTest\obj\Debug\netcoreapp2.1\stringTest.csprojAssemblyReference.cache
+F:\Documents\myproject\string0813\stringTest\obj\Debug\netcoreapp2.1\stringTest.csproj.CoreCompileInputs.cache
+F:\Documents\myproject\string0813\stringTest\obj\Debug\netcoreapp2.1\stringTest.AssemblyInfoInputs.cache
+F:\Documents\myproject\string0813\stringTest\obj\Debug\netcoreapp2.1\stringTest.AssemblyInfo.cs
+F:\Documents\myproject\string0813\stringTest\obj\Debug\netcoreapp2.1\stringTest.csproj.CopyComplete
+F:\Documents\myproject\string0813\stringTest\obj\Debug\netcoreapp2.1\stringTest.dll
+F:\Documents\myproject\string0813\stringTest\obj\Debug\netcoreapp2.1\stringTest.pdb
