@@ -6,54 +6,54 @@ using System.Text.RegularExpressions;
 
 namespace string0813
 {
-   public class subAB
+   public class Program
     {
-        static string strIn = "";
-        static string[] str = new string[3];
+         string strIn = "";
+         string[] str = new string[3];
         //            str[0] = "57569546235692356235625677237086235";
         //            str[1] = "2678906787620876280672087628907620867289067289762076";
         //            long result = Convert.ToInt64(str[0]) - Convert.ToInt64(str[1]);
-        static Queue<string> st1 = new Queue<string>();
-        static Queue<string> st2 = new Queue<string>();
-        static Queue<int> stIn = new Queue<int>();
+         Queue<string> st1 = new Queue<string>();
+         Queue<string> st2 = new Queue<string>();
+         Queue<int> stIn = new Queue<int>();
 
-        static string reString;
-        static Queue<string> restring = new Queue<string>();
+         string reString;
+         Queue<string> restring = new Queue<string>();
 
-        static string right = "-2678906787620876223102541393215264631663390052675841";
-        static public bool revert;
+         string right = "-2678906787620876223102541393215264631663390052675841";
+         public bool revert;
 
-        static public string getRestring()
+         public string getRestring()
         {
             return reString;
         }
-        static public void setSt1(string str1)
+         public void setSt1(string str1)
         {
             str[0] = str1;
         }
 
-        static public void setSt2(string str2)
+         public void setSt2(string str2)
         {
             str[1] = str2;
         }
-        static public void DataInit()
-        {
+        // public void DataInit()
+        //{
 
-            str[2] = "2678906787620876223102541393215264631663390052675841";
-            //int[] re = new int[2];
+        //    str[2] = "2678906787620876223102541393215264631663390052675841";
+        //    //int[] re = new int[2];
 
-            str[0] = "";
-            str[1] = "";
-          //  reString = "";
-        }
+        //    str[0] = "";
+        //    str[1] = "";
+        //  //  reString = "";
+        //}
         //只有数字
-        public static bool IsOnlyNumber(string value)
+        public  bool IsOnlyNumber(string value)
         {
             Regex r = new Regex(@"^[0-9]+$");
             return r.Match(value).Success;
         }
 
-        static public bool DataInput()
+         public bool DataInput()
         {
             strIn = Console.ReadLine();
             str = strIn.Split('-');
@@ -73,7 +73,7 @@ namespace string0813
             //#endregion
         }
 
-        static public void DataTide()
+         public void DataTide()
         {
             if(str[0].Length < str[1].Length)
             {
@@ -129,7 +129,7 @@ namespace string0813
             //}
             //#endregion
         }
-        static public void DataSub()
+         public void DataSub()
         {
             long number1; 
             long number2;
@@ -155,8 +155,7 @@ namespace string0813
                         number1 += 1000000000000000000L;
                         long top = long.Parse((string)st1.Dequeue());
                         top = top - 1;
-                        if( 0 != top )
-                            st1.Enqueue(top.ToString());
+                        st1.Enqueue(top.ToString());
 
                         //重新计算
                         reNum = number1 - number2;
@@ -168,7 +167,7 @@ namespace string0813
             }
         }
          
-        static public void ShowResult()
+         public void ShowResult()
         {
             string str1 = "";
             while(restring.Count>0)
@@ -194,7 +193,7 @@ namespace string0813
             revert = false;
         }
 
-       static public void solve()
+        public void solve()
         {
             DataTide();
             DataSub();
@@ -202,14 +201,16 @@ namespace string0813
         }
         static void Main(string[] args)
         {
-            DataInit();
-
+            //DataInit();
+            Program p1 = new Program();
+            
             while (true)
             {
-                if (DataInput())
+                if (p1.DataInput())
                 {
-                    solve();                }
-
+                    p1.solve();
+                }
+            
             }
 
             Console.ReadKey();
