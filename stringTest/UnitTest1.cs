@@ -6,7 +6,8 @@ namespace stringTest
     public class UnitTest1
     {
         private readonly string0813.Program p1 = new string0813.Program();
-        [TestMethod]
+
+        [TestMethod,TestCategory("zero test")]
         public void TestZero()
         {
             p1.setSt1("0");
@@ -17,7 +18,7 @@ namespace stringTest
 
         }
 
-        [TestMethod]
+        [TestMethod,TestCategory("zero test")]
         public void TestZero1()
         {
             p1.setSt1("0");
@@ -29,7 +30,7 @@ namespace stringTest
         }
 
 
-        [TestMethod]
+        [TestMethod,TestCategory("zero test")]
         public void TestZero2()
         {
             p1.setSt1("12345678901234567890");
@@ -40,7 +41,27 @@ namespace stringTest
 
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("zero test")]
+        public void geZero()
+        {
+            p1.setSt1("12345678901234567891");
+            p1.setSt2("2345678901234567890");
+
+            p1.solve();
+            Assert.IsTrue(p1.getRestring() == "10000000000000000001");
+        }
+
+        [TestMethod, TestCategory("zero test")]
+        public void geZero1()
+        {
+            p1.setSt1("1234567890123456789");
+            p1.setSt2("1234567890123456789");
+
+            p1.solve();
+            Assert.IsTrue(p1.getRestring() == "0");
+        }
+
+        [TestMethod,TestCategory("one test")]
         public void TestLarge()
         {
             p1.setSt1("11112");

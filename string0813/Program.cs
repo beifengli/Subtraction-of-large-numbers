@@ -144,12 +144,20 @@ namespace string0813
                 if(reNum>=0)
                 {
                     stIn.Enqueue(1);
-                    restring.Enqueue(reNum.ToString());
+                    if (st1.Count >= 1)
+                    {
+                        restring.Enqueue(reNum.ToString().PadLeft(18, '0'));
+                    }
+                    else
+                    {
+                        restring.Enqueue(reNum.ToString());
+
+                    }
                 }
                 else
                 {
                     //借位
-                    if (st1.Count >=0)
+                    if (st1.Count >0)
                     {
                         //借位
                         number1 += 1000000000000000000L;
@@ -160,7 +168,7 @@ namespace string0813
                         //重新计算
                         reNum = number1 - number2;
                         stIn.Enqueue(0);
-                        restring.Enqueue(reNum.ToString());
+                        restring.Enqueue(reNum.ToString().PadLeft(18,'0'));
                     }
                 }
 
@@ -170,15 +178,23 @@ namespace string0813
          public void ShowResult()
         {
             string str1 = "";
-            while(restring.Count>0)
+            string strTemp = "";
+            while (restring.Count > 0)
             {
-                str1 = (string)restring.Dequeue() + str1;
+                strTemp = (string)restring.Dequeue();
+                str1 = strTemp + str1;
             }
+            
             while(st1.Count>0)
             {
                 str1 = (string)st1.Dequeue() + str1;
             }
-            if(true == revert)
+
+            Regex r = new Regex(@"^[0]+$");
+            if (r.Match(str1).Success)
+                str1 = "0";
+
+            if (true == revert)
             {
                 str1 = "-" + str1;
             }
