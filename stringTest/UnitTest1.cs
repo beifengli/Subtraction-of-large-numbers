@@ -44,11 +44,11 @@ namespace stringTest
         [TestMethod, TestCategory("zero test")]
         public void geZero()
         {
-            p1.setSt1("12345678901234567891");
+            p1.setSt1("12345678901234567890");
             p1.setSt2("2345678901234567890");
 
             p1.solve();
-            Assert.IsTrue(p1.getRestring() == "10000000000000000001");
+            Assert.IsTrue(p1.getRestring() == "10000000000000000000");
         }
 
         [TestMethod, TestCategory("zero test")]
